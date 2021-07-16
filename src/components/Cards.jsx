@@ -173,7 +173,7 @@ export default class Cards extends React.Component {
                 // When you finish:
                 if (this.pairsUncovered === 6) {
                     setTimeout(() => {
-                    alert(`Herzlichen Glückwunsch! Sie haben es in ${this.moves} Schritten geschafft.)
+                    alert(`Herzlichen Glückwunsch! Sie haben es in ${this.moves} Schritten geschafft.`)
                     }, 1000)
                 }
                 return;
