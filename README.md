@@ -1,5 +1,7 @@
-# Memory Game
+# Memory Game With Quiz Cards
 
-This repository is a template for a memory game.
+Enjoy the dogs and learn German.
 
 Built with React, SASS, and Bootstrap.
+
+Images taken from Unsplash with little modification.
