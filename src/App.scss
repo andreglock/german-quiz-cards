@@ -1,0 +1,93 @@
+body,
+body * {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+div#game-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-flip {
+  width: 125px;
+  height: 125px;
+}
+
+.flipcard {
+  transform: rotateY(180deg);
+}
+  
+.mainflip {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+  
+.frontside, .backside {
+  backface-visibility: hidden;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+  
+.frontside {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+  
+.backside {
+  background: white;
+  transform: rotateY(-180deg);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.done {
+  box-shadow: 0px 0px 15px #c3a916;
+}
+
+.book {
+  margin: 5px;
+}
+
+.back-body{
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pre {
+    text-align: center;
+    line-height: 3em;
+  }
+}
+
+@media (min-width: 576px) {
+  .book {
+    margin: 14px;
+  }
+  .image-flip, .back-body {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 1104px) {
+  .book {
+    margin: 24px;
+  }
+  .image-flip, .back-body {
+    width: 200px;
+    height: 200px;
+  }
+}
